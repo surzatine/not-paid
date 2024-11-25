@@ -1,7 +1,15 @@
 ## Client did not pay?
 
+> Add this code in index.html file below < /body> tag
+
+```html
+</body>
+<script src="not-paid.js"></script>
+```
 
 Add opacity to the body tag and decrease it every day until their site completely fades away. Set a due date and customize the number of days you offer them until the website is fully vanished. 
+
+
 
 
 ```javascript
@@ -30,6 +38,3 @@ Made by Ciprian (@kleampa), Romania
 
 PS: No PR's or issues will be accepted for this project. 
 
-## Advertising
-
-Because this repo is going viral from time to time to developers, I'm open for discussion if you want to promote a product/service in this README file. Just mail me at kleampa[]gmail

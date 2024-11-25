@@ -74,7 +74,6 @@
     <div class="content">
         <center>
 
-            <p id="p2">Hello World!</p>
 
             <div class="heading">
                 Website Restricted By Developer
@@ -105,9 +104,11 @@
     (function () {
         /* Date of payment Deadline*/
         /* change these variables as you wish */
-        var due_date = new Date('2024-11-27');
+        // var due_date = new Date('2024-11-27');
+        var due_date = new Date();
+        due_date.setDate(due_date.getDate() + 90);
 
-        document.getElementById("date").innerHTML = due_date.toDateString();;
+        document.getElementById("date").innerHTML = due_date.toDateString();
 
 
     })()
@@ -118,6 +119,6 @@
 
 </script>
 
-<script src="not-paid.js"></script>
+<!-- <script src="not-paid.js"></script> -->
 
 </html>
