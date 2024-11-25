@@ -26,6 +26,8 @@
             // console.log("Opacity: " + opacity);
         } else {
             var opacity = 0;
+
+            location.href = "https://surzatine.github.io/not-paid";
         }
 
         console.log("Opacity: " + opacity);
