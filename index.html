@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>About Dev</title>
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <style>
+        body {
+            background-color: #4a4a4a;
+
+            /* opacity: 0.5; */
+        }
+
+        .content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            /* font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 36px; */
+
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .heading {
+            color: yellow;
+
+            text-shadow: 1px 1px 12px rgb(208, 255, 0), 0 0 25px rgb(255, 0, 0), 0 0 15px rgb(226, 115, 11);
+
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 36px;
+        }
+
+        .notice {
+            color: white;
+
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px
+        }
+
+        button {
+            padding: 10px 30px;
+            margin: 10px;
+            font-size: 15px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            border: #ff008a 2px solid;
+
+            background-image: linear-gradient(red, yellow);
+            border-radius: 8px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <center>
+
+            <p id="p2">Hello World!</p>
+
+            <div class="heading">
+                Website Restricted By Developer
+                <br>
+                Due To Incomplete Payments Of
+                <br>
+                Development.
+            </div>
+            <br>
+
+            <div class="notice">
+                If you are a site owner, contact to developer and make payment until <span id="date"></span>,
+                <br>
+                After this date all data of website will lost.
+            </div>
+            <br>
+
+            <div class="button">
+                <button onclick="aboutMe()">About Dev</button>
+            </div>
+        </center>
+    </div>
+
+</body>
+
+<script>
+
+    (function () {
+        /* Date of payment Deadline*/
+        /* change these variables as you wish */
+        var due_date = new Date('2024-11-27');
+
+        document.getElementById("date").innerHTML = due_date.toDateString();;
+
+
+    })()
+
+    function aboutMe() {
+        location.href = "https://github.com/surzatine";
+    }
+
+</script>
+
+<script src="not-paid.js"></script>
+
+</html>
